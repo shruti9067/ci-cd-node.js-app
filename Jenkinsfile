@@ -5,15 +5,6 @@ pipeline {
         APP_SERVER = "ubuntu@3.131.83.155"
         APP_DIR = "/home/ubuntu/app"
     }
-
-    stages {
-
-        stage('Clone Code') {
-            steps {
-                git branch: 'main',
-                url: 'https://github.com/shruti9067/ci-cd-node.js-app.git',
-                credentialsId: 'github-credentials'
-            }
         }
 
         stage('Deploy to App Server') {
