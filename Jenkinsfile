@@ -5,7 +5,7 @@ pipeline {
         APP_SERVER = "ubuntu@3.131.83.155"
         APP_DIR = "/home/ubuntu/app"
     }
-        }
+        
 
         stage('Deploy to App Server') {
             steps {
